@@ -10,7 +10,7 @@
     "lint": "tslint -c ./tslint.json 'src/**/*.ts'",
     "commit": "npm run lint && npm run test && git add . && npx git-cz",
     "prepublish": "npm run build",
-    "postversion": "npm run publish"
+    "postversion": "npm publish"
   },
   "author": "",
   "license": "ISC",
