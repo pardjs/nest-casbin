@@ -7,15 +7,22 @@
   "scripts": {
     "test": "jest",
     "lint": "tslint -c ./tslint.json 'src/**/*.ts'",
-    "commit": "npx git-cz"
+    "commit": "git add . && git-cz"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^24.0.6",
+    "commitizen": "^3.0.5",
+    "cz-conventional-changelog": "^2.1.0",
     "jest": "^24.1.0",
     "ts-jest": "^24.0.0",
     "tslint": "^5.12.1",
     "typescript": "^3.3.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
