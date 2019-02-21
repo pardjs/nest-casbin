@@ -1,6 +1,6 @@
 {
   "name": "@pardjs/nest-casbin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "repository": "https://github.com/pardjs/nest-casbin",
   "main": "dist/index.js",
