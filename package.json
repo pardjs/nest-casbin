@@ -9,8 +9,8 @@
     "test": "jest --passWithNoTests",
     "lint": "tslint -c ./tslint.json 'src/**/*.ts'",
     "commit": "npm run lint && npm run test && git add . && npx git-cz",
-    "prepublish": "npm run commit && npm run build",
-    "version": "npm run commit && npm publish"
+    "prepublish": "npm run build",
+    "postversion": "npm run publish"
   },
   "author": "",
   "license": "ISC",
