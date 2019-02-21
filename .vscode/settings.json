@@ -1,6 +1,10 @@
 {
   "cSpell.words": [
+    "Injectable",
     "casbin",
-    "pardjs"
+    "nestjs",
+    "pardjs",
+    "readonly",
+    "typeorm"
   ]
 }

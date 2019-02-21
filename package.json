@@ -1,19 +1,21 @@
 {
   "name": "@pardjs/nest-casbin",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "repository": "https://github.com/pardjs/nest-casbin",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "jest",
+    "build": "tsc",
+    "test": "jest --passWithNoTests",
     "lint": "tslint -c ./tslint.json 'src/**/*.ts'",
-    "commit": "git add . && git-cz"
+    "commit": "npm run lint && npm run test && git add . && npx git-cz",
+    "prepublish": "npm run commit && npm run build",
+    "version": "npm run commit && npm publish"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^24.0.6",
-    "commitizen": "^3.0.5",
     "cz-conventional-changelog": "^2.1.0",
     "jest": "^24.1.0",
     "ts-jest": "^24.0.0",
@@ -24,5 +26,12 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "@nestjs/common": "^5.7.2",
+    "casbin": "^2.0.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.4.0",
+    "typeorm-adapter": "^1.0.2"
   }
 }
