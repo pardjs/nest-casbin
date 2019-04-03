@@ -1,5 +1,7 @@
 # nest-casbin
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pardjs/nest-casbin.svg)](https://greenkeeper.io/)
+
 Make magic with [Nest.js](https://github.com/nestjs/nest), [Casbin](https://github.com/casbin/casbin) and [TypeORM](https://github.com/typeorm/typeorm).
 
 ## Example
