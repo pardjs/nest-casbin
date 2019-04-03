@@ -28,7 +28,7 @@
     }
   },
   "dependencies": {
-    "@nestjs/common": "^5.7.2",
+    "@nestjs/common": "^6.0.5",
     "casbin": "^2.0.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.4.0",
